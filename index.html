@@ -2,525 +2,497 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lendeet</title>
-     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/vendors/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lendeet</title>
+  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Custom stylesheet -->
 </head>
 
-<body>
-    <header class="foi-header landing-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light foi-navbar">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/logo.png" alt="FOI" height="50" width="50">
-                </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link" href="#faq">FAQ's</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
-                    </ul>
-                    
+<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!-- Site Header -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader.gif" alt="preloader">
+   </div>
+   </div>    -->
+    <!--Site Header Area -->
+    <header class="site-header site-header--menu-left landing-11-menu site-header--absolute site-header--sticky">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="#">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo.png" alt="" height="50" width="50" class="light-version-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo.png" alt="" height="50" width="50" class="dark-version-logo">
+            </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
                 </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <!-- <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Dropdowns <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-9">
+                    <li class="sub-menu--item">
+                      <a href="#">Dropdown 01</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="#">Dropdown 02</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="#">Dropdown 03</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="#">Dropdown 04</a>
+                    </li>
+                  </ul>
+                </li> -->
+                <li class="nav-item">
+                  <a href="#about" class="nav-link-item">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#features" class="nav-link-item">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#support" class="nav-link-item">Support</a>
+                </li>
+              </ul>
             </nav>
-            <div class="header-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Great app that makes your life awesome</h1>
-                        <p class="text-dark">Lendeet for property owners who want more value from their properties. We create a marketplace that provides property owners an opportunity to lend out and hire stuffs they currently need or not while making money.</p>
-                        <a href="#about"> <button class="btn btn-primary mb-4">Get Started</button></a>
-                        <div class="my-2">
-                            <p class="header-app-download-title">MOBILE APP COMING SOON!</p>
-                        </div>
-                        <div>
-                            <button class="btn btn-app-download mr-2"><img src="assets/images/ios.svg" alt="App store"></button>
-                            <button class="btn btn-app-download"><img src="assets/images/android.svg" alt="play store"></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="assets/images/app_1.png" alt="app" width="388px" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
+          <div class="header-btns  header-btn-l11 ms-auto d-none d-xs-inline-flex align-items-center">
+            <a class="btn log-in-btn focus-reset" href="#">
+              Contact Us
+            </a>
+            <a class="download-trail-btn btn focus-reset" href="https://docs.google.com/forms/d/e/1FAIpQLSc345AZ3bZPelXmvc-G-u2tPb4v9Ju7qs9xEkzSnKEXTNFnuA/viewform">
+              Join Waitlist
+            </a>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
     </header>
-    <section class="py-5 mb-5">
-        <div class="container">
-            <h2 class="section-title">Application Features</h2>
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5>Secure Data</h5>
-                    <p class="text-dark">With strong emphasis on security to quickly resolve any problem, we respectfully request that you leave a review after borrowing. You can report any issues you have with a borrow or lend to us, and our Team will look into that as quickly as possible.</p>
-                    <p class="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
-                    <h5>Premium Services</h5>
-                    <p class="text-dark">Those who wish to lend and make more money can take advantage of Lendeet's Premium Services. For these services, we accept payments both online and off. On Lendeet, we promise dependable and safe payments.</p>
-                    <p class="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
+    <!-- navbar- -->
+    <!-- Hero Area -->
+    <div class="hero-area-l11 position-relative z-index-1 overflow-hidden">
+      <div class="container position-relative">
+        <div class="row position-relative justify-content-center">
+          <div class="col-xl-8 col-lg-9 col-md-12 order-lg-1 order-1" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+            <div class="content">
+              <h1>Lend, Roll (borrow) <br class="d-none d-md-block"> Make money, Save money</h1>
+              <div class="row banner-l-11-bottom-content">
+                <div class="col-lg-8 col-md-8 col-sm-10">
+                  <p class="position-relative banner-main-content-l-11">Built specially for people who have stuff they currently don’t need and those who need stuff they currently don’t have.
+                    <span class="line-left-content"></span>
+                  </p>
                 </div>
-                <div class="col-lg-4 mb-3 mb-lg-0">
-                    <h5>Live Chat</h5>
-                    <p class="text-dark">The value of the internet is access. If you don't go where your consumers are, then your competitors will. You can be present for customers when and when they need you most with the help of tools like Live Chat and Ticketing.</p>
-                    <p class="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
-                    <h5>Market Place</h5>
-                    <p class="text-dark">People can borrow or lend to others on an online marketplace. In contrast to manual lending, Lendeet offers a community of lenders, a wide range of possibilities, and assured security of properties.</p>
-                    <p class="mb-5"><a href="#!" class="text-primary mb-5">Find out More</a></p>
+                <div class="col-lg-4 col-md-4 col-sm-6 flex-y-center ">
+                  <a class="btn l-11-hero-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc345AZ3bZPelXmvc-G-u2tPb4v9Ju7qs9xEkzSnKEXTNFnuA/viewform">Join Waitlist</a>
                 </div>
-                <div class="col-lg-4">
-                    <div id="landingClientCarousel" class="carousel slide landing-client-carousel" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                        <img src="assets/images/plt.gif" alt="Slack" class="img-fluid" class="w-100 img-fluid pr-md-5" width="550px" height="550px">
-                            </div>
-                            <div class="carousel-item">
-                                     <img src="assets/images/sec.gif" alt="Slack" class="img-fluid" class="w-100 img-fluid pr-md-5" width="550px" height="550px">
-                               
-                            </div>
-                            <div class="carousel-item">
-                                     <img src="assets/images/chat.gif" alt="Slack" class="img-fluid" class="w-100 img-fluid pr-md-5" width="550px" height="550pt">
-                            </div>
-                        </div>
-                        <ol class="carousel-indicators">
-                            <li data-target="#landingClientCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#landingClientCarousel" data-slide-to="1"></li>
-                            <li data-target="#landingClientCarousel" data-slide-to="2"></li>
-                        </ol>
+                <div class="col-xl-3 col-lg-4">
+                  <div class="compitable-text border-top d-inline-block">
+                    <p>App coming soon!!!</p>
+                    <div class="compatible-icon flex-y-center img-grayscale">
+                      <a href="#" class="font-size-13 mr-7"><img src="./image/l2/android.svg" alt="" height="50" width="50"></a>
+                      <a href="#" class="font-size-13 mr-7"><img src="./image/l2/ios.svg" alt="" height="50" width="50"></a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-9 order-lg-1 order-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <img src="image/l2/app_2.png" alt="" class="w-100 hero-l11-main-image">
+          </div>
         </div>
-    </section>
-    <section class="py-5 mb-5" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
-                    <img src="assets/images/app_2.png" alt="special offers" class="img-fluid" width="492px">
-                </div>
-                <div class="col-md-6">
-                    <h2 class="section-title">About Lendeet</h2>
-                    <p class="mb-5">Lendeet is a platform for online classified ads containing sections for borrowing and lending of goods, services, volunteer work, gigs, resumes, and chat rooms. It is founded in Nigeria. Depending on the product type and the market's geographic location, classified ads can be either free or paid for.</p>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <div class="media landing-feature">
-                                <span class="landing-feature-icon"></span>
-                                <div class="media-body">
-                                    <h5>Mission</h5>
-                                    <p>To create a platform where Lenders and Borrowers can liaise with ensured security for both parties.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="media landing-feature">
-                                <span class="landing-feature-icon"></span>
-                                <div class="media-body">
-                                    <h5>Vision</h5>
-                                    <p>To create a global environment of possibilities where products everywhere can be for everyone.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="media landing-feature">
-                                <span class="landing-feature-icon"></span>
-                                <div class="media-body">
-                                    <h5>Value Preposition</h5>
-                                    <p>Lendeet is for property owners who want more value from their properties.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="hero-shape-l11-1 d-none d-md-block">
+        <img src="./image/l2/hero-shape-1.svg" alt="">
+      </div>
+      <div class="hero-shape-l11-2 d-none d-md-block">
+        <img src="./image/l2/hero-shape-2.png" alt="">
+      </div>
+    </div>
+    <!-- Brand-area -->
+
+    <!-- Content Area-1 -->
+    <div class="content-area-l-11-1" id="about">
+      <div class="container">
+        <div class="row align-items-center justify-content-lg-start justify-content-center">
+          <div class="col-xl-6 col-md-5 col-md-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img position-relative z-index-1">
+              <img src="image/l2/content-img2.png" alt="" class="w-100">
             </div>
+          </div>
+          <div class="offset-xxl-1 col-xxl-5 col-xl-6 col-lg-7 col-md-9" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content section-heading-5">
+              <h2>
+                About Lendeet.
+              </h2>
+              <p>Lendeet is a team of young vision-driven people determined to help you save and earn from those things you don’t use too often. We are building Africa’s first blockchain powered Lending marketplace.</p>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+    <!-- Content Area-2  -->
+    <div class="content-area-l-11-2">
+      <div class="container">
+        <div class="row align-items-center justify-content-lg-between justify-content-center">
+          <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+            <div class="content section-heading-5">
+              <h2>
+               Lendeet Mission & Vision.
+              </h2>
+              <div class="d-flex content-l-11-3-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 32 27">
+                  <g>
+                    <g>
+                      <g>
+                        <path class="mypath1" fill="none" stroke="#FA8128" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="2" d="M25.528 25.615v0h5.47v0-5.911c0-.56-.341-1.062-.86-1.27l-5.118-2.05a1.367 1.367 0 0 1-.86-1.267v-1.2a5.445 5.445 0 0 0 2.735-4.711V6.471a5.47 5.47 0 0 0-8.205-4.738">
+                        </path>
+                      </g>
+                      <g>
+                        <path class="mypath1" fill="none" stroke="#FA8128" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="2" d="M19.367 19.846l-5.14-2.036a1.358 1.358 0 0 1-.864-1.257v-1.192a5.394 5.394 0 0 0 2.747-4.676V7.97c0-2.999-2.46-5.43-5.495-5.43-3.034 0-5.494 2.431-5.494 5.43v2.715a5.394 5.394 0 0 0 2.747 4.676v1.192c0 .555-.342 1.054-.864 1.26l-5.14 2.036c-.52.206-.863.703-.864 1.257v4.51h19.23v0-4.51c0-.555-.342-1.054-.863-1.26z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                <div class="content-body">
+                  <h5>Our Mission</h5>
+                  <p>To create a platform where Lenders and Borrowers can liaise with ensured security for both parties.</p>
+                </div>
+              </div>
+              <div class="d-flex content-l-11-3-card">
+                <img src="image/l2/settings.svg" alt="icon" >
+                <div class="content-body">
+                  <h5>Our Vision</h5>
+                  <p>To create a global environment of possibilities where products everywhere can be for everyone.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 offset-xxl-2 col-xl-6 col-lg-5 col-md-9 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+            <div class="content-img">
+              <img src="image/l2/content-img1.png" alt="" class="w-lg-auto w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content Area -->
+    <div class="content-area-l-11-3 position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-xl-6 col-lg-6 col-md-8 order-lg-1 order-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <div class="content-img">
+              <img src="image/l2/content-img3.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="content section-heading-5">
+              <h2>Every Property, An Investment</h2>
+              <p>Have you ever bought something and after a while, you see no need for it anymore? Maybe a lawn mower, and the next time your field would need it is probably two months after? Perhaps it's that car you don't need, taking up space in your garage for weeks now?</p><br>
+                <p>During this period, your purchase seems to be nothing more than a liability to you. Lendeet offers an opportunity to turn every property into an investment for you. So, while you currently don’t need your lawn mower, you can make money lending it to people who do! We believe property owners can get more value from their properties; and if they can, why not? </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Content Area -->
+    <div class="content-area-l-11-3 position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          
+          <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="content section-heading-5">
+              <h2>Do More With Less</h2>
+              <p>With the dwindling economy of Nigeria today, and the recurring increase in prices of goods, we think it is time for you to embrace the sharing economy like we have done. Instead of buying that wedding dress, a new camera, a speed boat, camping tents, a projector or every playstation release; you can lend it!</p>
+              
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-8 order-lg-1 order-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <div class="content-img">
+              <img src="image/l2/content-img3.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Content Area -->
+    <div class="content-area-l-11-3 position-relative " id="features">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-xl-6 col-lg-6 col-md-8 order-lg-1 order-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            <div class="content-img">
+              <img src="image/l2/content-img3.png" alt="" class="w-100">
+            </div>
+          </div>
+          <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div class="content section-heading-5">
+              <h2>Why Choose Lendeet?</h2>
+              <ul class="list-unstyled pl-0">
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Save: Save money on things you only need every now and then
+
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Earn: Earn money from things you already have by lending them out
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Community: Connect with friends and send guarantor requests to friends. The more friends that vouch for you, the more you can lend
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Security: Lendeet guarantees the security of lends in the duration of the lending process. Learn more 
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Achieve Bigger goals: Do more with less, money isn’t so much of the challenge anymore!
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Reduce Waste: If you don’t need it, someone else does.
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Reduce Co2 Emission: We do this by sharing things like cars, generators and other Co2 emitting devices
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-check"></i>Instant Payment: Cash out your earnings whenever you want
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
-     <section class="py-5 mb-5">
-         <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mb-4 mb-md-0 pr-lg-0">
-                        <h2 class="about-section-one-title">
-                            With more apps than iOS, Android puts <span class="font-weight-normal">a world of options at your fingertips.</span>
-                        </h2>
-                        <div class="about-section-one-content">
-                            <p>Any firm can benefit from using Lendeet. This is a result of the growing popularity of online classifieds sites, particularly for small and medium-sized businesses, as a way to source clients, market their products, and fill job openings. </p>
-
-                            <p>They provide businesses with an accessible platform for advertising. Lendeet has made it even simpler for customers to obtain services and goods as internet trade has become more prevalent. </p>
-                            
-                            <p class="mb-0">Because of this, every company needs to have a strong internet presence. Few companies can afford to launch comprehensive digital campaigns because to the high cost of advertising; this is where Lendeet comes in.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 pl-lg-0 d-flex align-items-center align-items-lg-end">
-                        <img src="assets/images/about_img_1.png" alt="about" class="img-fluid" width="448px">
-                    </div>
+    <!-- Feature Area -->
+    <div class="feature-l-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 px-lg-12 col-md-12">
+            <div class="row justify-content-center">
+              <div class="col-lg-10 text-center">
+                <div class="section-heading-5">
+                  <h2>How It Works</h2>
+                  <p>For property owners who want more value from their properties. We create a marketplace that provides property owners an opportunity to lend out and hire stuffs they currently need or not while making money.</p>
                 </div>
+              </div>
             </div>
-            </section>
-            <section class="py-5 mb-5">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mb-5 mb-md-0">
-                        <img src="assets/images/about_img_2.png" alt="about 2" class="w-100 img-fluid pr-md-5" width="437px">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="about-section-two-title">We create the best <span class="font-weight-normal">solution for you and your business.</span></h2>
-                        <div class="about-section-two-content">
-                            <p>The convenience of being able to locate unusual objects nearby is one of the advantages of using an online market place like Lendeet, along with the broad selection of goods offered and the competitive cost. </p>
-                            <p> It's a fantastic location to discover unusual stuff, and lenders can even loan out their possessions and locate a borrower elsewhere.</p>
-                        </div>
-                    </div>
+            <div class="row feature-l-11-items justify-content-center">
+              <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                <div class="d-flex ">
+                  <div class="icon-box">
+                    <i class="icon icon-layers-3"></i>
+                  </div>
+                  <div class="content-body">
+                    <h5>Borrow</h5>
+                    <p>Verify your account - Borrow - Enjoy your lend - Return.</p>
+                  </div>
                 </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+                <div class="d-flex ">
+                  <div class="icon-box">
+                    <i class="icon icon-layers-3"></i>
+                  </div>
+                  <div class="content-body">
+                    <h5>Lend</h5>
+                    <p>Verify your account - lend out- Enjoy your pay- Retrieve item.</p>
+                  </div>
                 </div>
-            </section>
-
-              <section class="py-5 mb-5" id="features">
-                <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                        <h5 class="feature-title">The Outlook</h5>
-                        <p class="feature-content"> Lendeet has 5 icons on it's bottom navigational bar; The home page, The Lend page, Categories, Messaging, Search and Notifications...</p>
-                        <a href="#!" class="feature-link">Find out More</a>
-                    </div>
-                    <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                        <h5 class="feature-title">The Profile</h5>
-                        <p class="feature-content">On the profile section, we have the; User About, List of your Lends, Your Rolls, Your Earnings, Your Star Rating, and User Reviews...</p>
-                        <a href="#!" class="feature-link">Find out More</a>
-                    </div>
-                    <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                        <h5 class="feature-title">New Users</h5>
-                        <p class="feature-content">When a user downloads the app for the first time, the screen should show two options ( sign up should be at the top right corner...</p>
-                        <a href="#!" class="feature-link">Find out More</a>
-                    </div>
-                </div>
-                <div class="row pt-5">
-                        <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                            <h5 class="feature-title">The Lending Page</h5>
-                            <p class="feature-content">You'll be required to input item category, item name, item description, keywords, upload live pictures, upload live video, price for 1 day. As a user fixes price...</p>
-                            <a href="#!" class="feature-link">Find out More</a>
-                        </div>
-                        <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                            <h5 class="feature-title">The Rolling Page</h5>
-                            <p class="feature-content">Once an item is clicked, it opens, with the owner’s avatar showing above and can be clicked to go to his/her profile. People may want to check...</p>
-                            <a href="#!" class="feature-link">Find out More</a>
-                        </div>
-                        <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                            <h5 class="feature-title">The Exchange</h5>
-                            <p class="feature-content">This is where the product moves from the lender to the roller. In the future, we would partner with a logistics company who would move the products...</p>
-                            <a href="#!" class="feature-link">Find out More</a>
-                        </div>
-                        <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                            <h5 class="feature-title">The Return</h5>
-                            <p class="feature-content">The lender and roller would discuss where to meet for return. We advice open places or public places like eateries...</p>
-                            <a href="#!" class="feature-link">Find out More</a>
-                        </div>
-                        <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                            <h5 class="feature-title">The Security</h5>
-                            <p class="feature-content">We would have the first verification for users, the second verification for users and the third verification for users level of authentication...</p>
-                            <a href="#!" class="feature-link">Find out More</a>
-                        </div>
-                        <div class="col-md-4 foi-feature">
-                        <img src="assets/images/Icon_3.png" alt="icon" class="feature-icon">
-                            <h5 class="feature-title">Live Chat Support</h5>
-                            <p class="feature-content">Lendeet has a 24/7 online support system for all requests and complaints you might have towards a transaction. when a session is started ...</p>
-                            <a href="#!" class="feature-link">Find out More</a>
-                        </div>
-                </div>
-                </div>
-            </section>
-            <section class="py-5 mb-5">
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-6 mb-5 mb-md-0">
-                        <img src="assets/images/img_3.png" alt="faq" class="img-fluid" width="424px">
-                    </div>
-                    <div class="col-md-6">
-                        <h2 class="feature-faq-title">Awesome Interface</h2>
-                        <div class="card feature-faq-card">
-                            <div class="card-header bg-white" id="featureFaqOneTitle">
-                                <a href="#featureFaqOneCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                    <h5 class="mb-0">Why borrow on Lendeet?</h5> <i class="far fa-plus-square ml-auto"></i>
-                                </a>
-                            </div>
-                            <div id="featureFaqOneCollapse" class="collapse" aria-labelledby="featureFaqOneTitle">
-                                <div class="card-body">
-                                    <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card feature-faq-card">
-                            <div class="card-header bg-white" id="featureFaqTwoTitle">
-                                <a href="#featureFaqTwoCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                    <h5 class="mb-0">Why Lend on Lendeet?</h5> <i class="far fa-plus-square ml-auto"></i>
-                                </a>
-                            </div>
-                            <div id="featureFaqTwoCollapse" class="collapse" aria-labelledby="featureFaqTwoTitle">
-                                <div class="card-body">
-                                    <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card feature-faq-card">
-                            <div class="card-header bg-white" id="featureFaqThreeTitle">
-                                <a href="#featureFaqThreeCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                    <h5 class="mb-0">How to create an account on Lendeet?</h5> <i class="far fa-plus-square ml-auto"></i>
-                                </a>
-                            </div>
-                            <div id="featureFaqThreeCollapse" class="collapse" aria-labelledby="featureFaqThreeTitle">
-                                <div class="card-body">
-                                    <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card feature-faq-card">
-                            <div class="card-header bg-white" id="featureFaqFourTitle">
-                                <a href="#featureFaqFourCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                    <h5 class="mb-0">What is a "marketplace" on Lendeet?</h5> <i class="far fa-plus-square ml-auto"></i>
-                                </a>
-                            </div>
-                            <div id="featureFaqFourCollapse" class="collapse" aria-labelledby="featureFaqFourTitle">
-                                <div class="card-body">
-                                    <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-
-    <section class="py-5 mb-5" id="faq">
-        <div class="container">
-            <h2>FAQ</h2>
-            <p class="section-subtitle">Frequently Asked Questions</p>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card mb-3 landing-faq-card">
-                        <div class="card-header bg-white" id="faqOneTitle">
-                            <a href="#faqOneCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                <h6 class="mb-0">How to create a listing on Lendeet?</h6> <i class="far fa-plus-square ml-auto"></i>
-                            </a>
-                        </div>
-                        <div id="faqOneCollapse" class="collapse" aria-labelledby="faqOneTitle">
-                            <div class="card-body">
-                                <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 landing-faq-card">
-                        <div class="card-header bg-white" id="faqTwoTitle">
-                            <a href="#faqTwoCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                <h6 class="mb-0">How to borrow a listing on Lendeet?</h6> <i class="far fa-plus-square ml-auto"></i>
-                            </a>
-                        </div>
-                        <div id="faqTwoCollapse" class="collapse" aria-labelledby="faqTwoTitle">
-                            <div class="card-body">
-                                <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 landing-faq-card">
-                        <div class="card-header bg-white" id="faqThreeTitle">
-                            <a href="#faqThreeCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                <h6 class="mb-0">How is the payment being handled on Lendeet?</h6> <i class="far fa-plus-square ml-auto"></i>
-                            </a>
-                        </div>
-                        <div id="faqThreeCollapse" class="collapse" aria-labelledby="faqThreeTitle">
-                            <div class="card-body">
-                                <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card mb-3 landing-faq-card">
-                        <div class="card-header bg-white" id="faqFourTitle">
-                            <a href="#faqFourCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                <h6 class="mb-0">Borrowing rules on Lendeet?</h6> <i class="far fa-plus-square ml-auto"></i>
-                            </a>
-                        </div>
-                        <div id="faqFourCollapse" class="collapse" aria-labelledby="faqFourTitle">
-                            <div class="card-body">
-                                <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 landing-faq-card">
-                        <div class="card-header bg-white" id="faqFiveTitle">
-                            <a href="#faqFiveCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                <h6 class="mb-0">How do I contact Support Team?</h6> <i class="far fa-plus-square ml-auto"></i>
-                            </a>
-                        </div>
-                        <div id="faqFiveCollapse" class="collapse" aria-labelledby="faqFiveTitle">
-                            <div class="card-body">
-                                <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 landing-faq-card">
-                        <div class="card-header bg-white" id="faqSixTitle">
-                            <a href="#faqSixCollapse" class="d-flex align-items-center" data-toggle="collapse">
-                                <h6 class="mb-0">How to report illegal activities on Lendeet?</h6> <i class="far fa-plus-square ml-auto"></i>
-                            </a>
-                        </div>
-                        <div id="faqSixCollapse" class="collapse" aria-labelledby="faqSixTitle">
-                            <div class="card-body">
-                                <p class="mb-0 text-gray">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-       <section class="page-header" id="contact">
-        <div class="container">
-                <h2>Tell us about yourself</h2>
-                <h5>Whether you have questions or you would just like to say hello, contact us.</h5>
-                </div>
-            </section>
-            <section class="contact-content container" >
-        
-                <div class="contact-widget media">
-                    <img src="assets/images/icon-4.png" alt="monitor" width="50px">
-                    <div class="media-body">
-                        <h6 class="widget-title">Production Office</h6>
-                        <p class="widget-content">support@lendeet.com</p>
-                    </div>
-                </div>
-                <div class="contact-widget media">
-                    <img src="assets/images/icon-5.png" alt="book" width="40px">
-                    <div class="media-body">
-                        <h6 class="widget-title">Administration Office</h6>
-                        <p class="widget-content">admin@lendeet.com</p>
-                    </div>
-                </div>
-            </section>
-            <section class="contact-form-wrapper" >
-        <div class="container">
-                <form method="post" action="submit.php" enctype="multipart/form-data">
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label for="name">YOUR NAME <sup>*</sup></label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name *">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="email">YOUR EMAIL ADDRESS <sup>*</sup></label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="greatnessmh@gmail.com *">
-                        </div>
-                    </div>
-                   
-                    <div class="row">
-                        <div class="form-group col-12">
-                            <label for="message">HOW CAN WE HELP YOU? <sup>*</sup></label>
-                            <textarea name="message" id="message" class="form-control" rows="7" placeholder="Hi there, I would like to ..."></textarea>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <button id="submit" name="submit" type="submit" class="btn btn-primary mb-4">Submit</button>
-                        <p class="form-footer-text">We'll get back to you in 1-2 hours.</p>
-                    </div>
-                </form>
-                 </div>
-            </section>
-    <footer class="foi-footer text-white">
-        <div class="container">
-            <div class="row footer-content">
-                <div class="col-xl-6 col-lg-7 col-md-8">
-                    <h2 class="mb-0">Do you want to know more or just have a question? write to us.</h2>
-                </div>
-                <div class="col-md-4 col-lg-5 col-xl-6 py-3 py-md-0 d-md-flex align-items-center justify-content-end">
-                    <a href="#contact" class="btn btn-danger btn-lg">Contact form</a>
-                </div>
+      </div>
+    </div>
+    <!-- Testimonial Section -->
+    <div class="testimonial-area-l-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-9" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+            <div class="section-heading-5 text-center">
+              <h2>
+                30+ Categories and Subcategories.
+              </h2>
+              <p>Sound & Video, Photography, Gaming & Sports, Fashion & Costumes, Tools & DIY, Health & Wellness, Household, Pets, Transport, Devices, Events, Books, Toys & Kids kit, Agriculture ...
+</p>
             </div>
-            <div class="row footer-widget-area">
-                <div class="col-md-3">
-                    <div class="py-3">
-                          <p><img src="assets/images/logo.png" height="15" width="15" alt="Lendeet"> Lendeet</p>
-                    </div>
-                    <p class="font-os font-weight-semibold mb3">Get our mobile app</p>
-                    <div>
-                        <button class="btn btn-app-download mr-2"><img src="assets/images/ios.svg" alt="App store"></button>
-                        <button class="btn btn-app-download"><img src="assets/images/android.svg" alt="play store"></button>
-                    </div>
-                </div>
-                <div class="col-md-3 mt-3 mt-md-0">
-                    <nav>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#faq" class="nav-link">Faq</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link">Account<span class="badge badge-pill badge-secondary ml-3">Coming soon!</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link">Blog<span class="badge badge-pill badge-secondary ml-3">Coming soon!</span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-3 mt-3 mt-md-0">
-                    <nav>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#features" class="nav-link">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link">Careers <span class="badge badge-pill badge-secondary ml-3">Coming soon!</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#!" class="nav-link">Shop with us<span class="badge badge-pill badge-secondary ml-3">Coming soon!</span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-md-3 mt-3 mt-md-0">
-                    <p>
-                        &copy; Lendeet. 2022 <a href="https://greamhouse.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="text-reset">greamhouse</a>.
-                    </p>
-                    <p>All rights reserved.</p>
-                    <nav class="social-menu">
-                        <a href="#!"><img src="assets/images/facebook.svg" alt="facebook"></a>
-                        <a href="#!"><img src="assets/images/instagram.svg" alt="instagram"></a>
-                        <a href="#!"><img src="assets/images/twitter.svg" alt="twitter"></a>
-                        <a href="#!"><img src="assets/images/youtube.svg" alt="youtube"></a>
-                    </nav>
-                </div>
-            </div>
+          </div>
         </div>
+ <!--        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+          <div class="col-xl-10 col-lg-12 col-md-10">
+            <div class="testimonial-slider-l-11 position-relative">
+              <div class="single-slide focus-reset">
+                <div class="testimonial-card">
+                  <p>
+                    <span class="d-inline-block quote-size-1">“</span> You made it so simple. My new site is
+                    so much faster
+                    and easier to work with than my old site. I just choose the page, make the change and
+                    click save. Thanks, guys!”
+                  </p>
+                  <div class="d-flex user-details align-items-center">
+                    <div class="customer-img">
+                      <img src="image/l2/client-img-2.png" alt="">
+                    </div>
+                    <div class="user-identity">
+                      <h5>Sallie Lawson</h5>
+                      <span>Founder of Crips</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-slide focus-reset">
+                <div class="testimonial-card">
+                  <p>
+                    <span class="d-inline-block quote-size-1">“</span> You made it so simple. My new site is
+                    so much faster
+                    and easier to work with than my old site. I just choose the page, make the change and
+                    click save. Thanks, guys!”
+                  </p>
+                  <div class="d-flex user-details  align-items-center">
+                    <div class="customer-img">
+                      <img src="image/l2/client-img-1.png" alt="">
+                    </div>
+                    <div class="user-identity">
+                      <h5>Ella Brooks</h5>
+                      <span>Founder of Crips</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-slide focus-reset">
+                <div class="testimonial-card rounded">
+                  <p>
+                    <span class="d-inline-block quote-size-1">“</span> You made it so simple. My new site is
+                    so much faster
+                    and easier to work with than my old site. I just choose the page, make the change and
+                    click save. Thanks, guys!”
+                  </p>
+                  <div class="d-flex user-details  align-items-center">
+                    <div class="customer-img">
+                      <img src="image/l2/client-img-2.png" alt="">
+                    </div>
+                    <div class="user-identity">
+                      <h5>Sallie Lawson</h5>
+                      <span>Founder of Crips</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Newsletter-area start -->
+    <div class="newsletter-l-11" id="support">
+      <div class="container">
+        <div class="row justify-content-center news-l-11-main-bg position-relative">
+          <div class="news-l-11-second-bg w-100 h-100"></div>
+          <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="content text-center">
+              <h5>Join Lendeet waitlist today!</h5>
+              <h2>Join Lendeet waitlist today!</h2>
+              <p>We designed and tested prototypes that helped identify pain points in the account creation
+                process. Together, we shaped the new standard.</p>
+              <div class="btn-area">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc345AZ3bZPelXmvc-G-u2tPb4v9Ju7qs9xEkzSnKEXTNFnuA/viewform" class="btn"></i> Join waitlist</a>
+              </div>
+              <span>No Span no unnecessary messages </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Area -->
+    <footer class="footer-l-11 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-logo-l-11">
+              <a href="#"><img src="image/logo/logo.png" alt="logo" height="50" width="50"></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-widget-l-11">
+              <ul class="pl-0 list-unstyled d-flex flex-wrap justify-content-center align-items-end ">
+                <li class="d-flex"><a href="about">About</a></li>
+                <li class="d-flex"><a href="features">Features</a></li>
+                <li class="d-flex"><a href="contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="social-icons-l-11" id="contact">
+              <ul class="pl-0 list-unstyled d-flex  justify-content-center justify-content-md-end align-items-end ">
+                <li class="d-flex flex-column justify-content-center"><a href="https://twitter.com/Lendeetnow?t=3KC2MWH8mzd_qC2LzPat1Q&s=09"><i
+                                    class="fab fa-twitter"></i></a></li>
+                <li class="d-flex flex-column justify-content-center"><a href="https://www.facebook.com/profile.php?id=100086825501801"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                <li class="d-flex flex-column justify-content-center"><a href="mailto:lendeetnow@gmail.com"><i class="fab fa-google"></i></a></li>
+              <li class="d-flex flex-column justify-content-center"><a href="http://instagram.com/lendeetnow"><img src="image/insta.png" alt="app" height="20" width="20"></a></li>
+              <li class="d-flex flex-column justify-content-center"><a href="https://www.linkedin.com/company/lendeet/"><img src="image/linkedin.png" alt="app" height="20" width="20"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="assets/vendors/jquery/jquery.min.js"></script>
-    <script src="assets/vendors/popper.js/popper.min.js"></script>
-    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="copyright-area-l-11">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-center">
+              <p>©Lendeet 2022 All right reserved. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Vendor Scripts -->
+  <script src="js/vendor.min.js"></script>
+  <!-- Plugin's Scripts -->
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/menu/menu.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
